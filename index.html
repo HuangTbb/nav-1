@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" >
+    <title>前航-前端导航网页</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="globalHeader">
+            <button class="seachlogo"></button>
+            <form class="searchForm" method="get" action="https://www.baidu.com/s">
+                <input name="wd" type="text" class="seachbar" autocomplete="off" >
+                <button type="submit" style="display: none;"></button>
+            </form>
+        </header>
+        <main class="globalMain">
+            <ul class="siteList">
+                <li class="last liLink">
+                    <div class="site picAddparent">
+                        <div class="logo">
+                            <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="32" height="32"><path d="M925.696 384q19.456 0 37.376 7.68t30.72 20.48 20.48 30.72 7.68 37.376q0 20.48-7.68 37.888t-20.48 30.208-30.72 20.48-37.376 7.68l-287.744 0 0 287.744q0 20.48-7.68 37.888t-20.48 30.208-30.72 20.48-37.376 7.68q-20.48 0-37.888-7.68t-30.208-20.48-20.48-30.208-7.68-37.888l0-287.744-287.744 0q-20.48 0-37.888-7.68t-30.208-20.48-20.48-30.208-7.68-37.888q0-19.456 7.68-37.376t20.48-30.72 30.208-20.48 37.888-7.68l287.744 0 0-287.744q0-19.456 7.68-37.376t20.48-30.72 30.208-20.48 37.888-7.68q39.936 0 68.096 28.16t28.16 68.096l0 287.744 287.744 0z" p-id="2149"></path></svg>
+                        </div>
+                        <div class="link">添加</div>
+                    </div>
+                </li>
+            </ul>
+        </main>
+        <div class="editForm">
+            <div class="editFormDiv">
+                <div class="editName">
+                  <p>图标名</p>
+                  <input type="text" name="editname" autocomplete="off" placeholder="a-z0-9">
+                </div>
+                <div class="editLabel">
+                    <p>名称</p>
+                    <input type="text" name="editlabel" autocomplete="off">
+                </div>
+                <div class="editLink">
+                  <p>网址</p>
+                  <input type="text" name="editlink" autocomplete="off">
+                </div>
+                <div class="editButtons">
+                    <button class="editCancel">取消</button>
+                    <button class="editComfirm">确定</button>
+                </div>
+            </div>
+        </div>
+        <div class="addForm">
+            <div class="addFormDiv">
+                <div class="addName">
+                    <p>图标名</p>
+                    <input type="text" name="addname" autocomplete="off" placeholder="a-z0-9">
+                </div>
+                <div class="addLabel">
+                    <p>名称</p>
+                    <input type="text" name="addlabel" autocomplete="off">
+                </div>
+                <div class="addLink">
+                    <p>网址</p>
+                    <input type="text" name="addlink" autocomplete="off">
+                </div>
+                <div class="addButtons">
+                    <button class="addCancel">取消</button>
+                    <button class="addComfirm">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="alertBox">
+        <div class="alert">
+            <p>名称不符合规则！</p>
+            <button>确定</button>
+        </div>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script src="main.js" type="module"></script>
+</body>
+</html>
